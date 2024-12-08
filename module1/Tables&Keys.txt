@@ -1,0 +1,27 @@
+Tables,keys and schema:-
+
+Relational Databases:
+relation=table
+table=set of rows and columns
+
+->tables consists of:
+1)rows/tuples/records
+2)columns/fields/attributes
+
+instance:set of tuple/rows + table structure.
+key:minimum set of sttributes/columns to uniquely identify a row/tuple.
+->simple key:a key with only one attribute.
+->compound key:a key with multiple attributes.
+->candidate key:set of all unique keys.
+eg:{id,{name,address},{phone number}}
+->primary key:one of the candidate key that the DB-designer chooses to maintain uniqueness.
+It should present in all the records.
+there should be atmost one primary key per table.
+unique for each row.
+...above rules can be combinely called as entity integrity constrains.
+**other candidate keys can be NULL.
+->Alternative/Secondary keys:-candidate keys that are not primary keys.
+->soper key:candidate key Union other attributes
+->foregin key:common attribute of two tables and atleast one should be primary key to point the records in other table.It acts as a pointer.
+->self referential:having both primary and foregin key in same table.
+Relational Schema=table structure + integrity constrains.
