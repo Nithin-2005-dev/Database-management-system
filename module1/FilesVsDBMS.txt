@@ -1,0 +1,31 @@
+Why not simply use files?
+
+file system:-
+->it is just a system to create files/folders and edit them or delete them
+
+DBMS:-
+->it is a software that ends up storing everything in a files.
+->it can be used by many people.
+e.g:oracle db,MySQL,MS SQL Server,IBM DB2,etc.
+
+1)querying:find all products priced >$100
+
+->data in files just store in csv format so it is difficult to search the data in it.
+->the searching can be done with c/c++/JAVA/..
+->where as DBMS uses the concept called indexing and the data is stored in files with proper indexing .So,it becomes easier to query the data.
+
+2)Redundancy:Customer table,purchasing table
+
+->DBMS reduces the redundancy i.e repetation of same data.
+->it can be done by creating different sets or tables of data with proper id's.
+
+3)Consistency:change the address
+
+->changing something will reflect in every related data in the database.
+->where as in files it is difficult to implement this functionality.
+
+4)Data Independence:Hides low levels details from the engineers using the DBMS.
+
+5)secruty & Access control: credit details,personal info.
+
+6)Abstraction & ease of data acess
