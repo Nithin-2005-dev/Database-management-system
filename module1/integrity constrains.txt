@@ -1,0 +1,34 @@
+Integrity constrains:
+
+1)Entity Integrity:
+->every table must have primary key.
+->primary key must be unique.
+->primary key should not be null.
+
+2)Domain Integrity:
+->valid values that an attribute can take
+eg:phone number should contain 0-9.
+
+3)user-defined Integrity:
+->custom constrains for safety of the system.
+eg:order limits,daily limit of money use in phonepe.
+
+4)Referal Integrity:
+->It set constrains to the foregin key table when some modifications happen in primary key table.
+
+changes in referenced table:-
+
+Insert->no changes
+Delete->no delete no action
+      ->on delete cascade
+      ->on delete set null
+modify->on modify no change
+      ->on modify cascade(time consuming)
+      ->on modify set null
+	  		
+changes in referencing table:-
+
+Insert->check for any violation
+Delete->do nothing
+modify->check for any violation
+	  		
