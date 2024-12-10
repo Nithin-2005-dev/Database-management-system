@@ -1,0 +1,22 @@
+Entity-Relationship models:-
+
+puropse:high level picture of the database
+
+Entity:object that can be uniquely identified
+eg:customer,product
+
+Attributes:properties/features of an entity or relationships (represented by ellipse)
+
+key attribute:uniquely identified attribute(represented by ellipse with underline)
+
+multi-valued attibutes:an attribute containing multiple values(represented by multi-stroke ellipse)
+
+derived attribute:which can be derived from other attributes(represented by dotted ellipse)
+
+compound attributes:extracted from main attribute
+
+relationships:related two or more tables(represented by diamond)
+
+total and partial participation:entities participating in a relation.
+= two lines represents total participation
+- one line represents partial participation

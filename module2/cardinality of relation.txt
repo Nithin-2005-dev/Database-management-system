@@ -1,0 +1,31 @@
+cardinality of relationships:-
+one-one
+one-many
+many-one
+many-many
+
+one-one:
+if there exists a single relation from both the tables.Then it is called one-one relation
+Represented by:
+<- ->
+
+one-many:
+if there exists a many entities for the sigle entity of other table.Then it is called one-many relation
+Represented by:
+<- =
+
+one-many:
+if there exists a single entity for the many entities of other table.Then it is called one-many relation
+Represented by:
+= ->
+
+many-many:
+if there exists a many entities for the many entities of other table.Then it is called one-many relation
+Represented by:
+= =
+
+
+Constructing tables from ER-diagrams:
+1)minimize the number of tables
+2)every table should have primary key
+3)each cell must have only one value
