@@ -1,0 +1,1 @@
+weak entity:a week entity needs to be assigned/related to a unique owner.(represented with double strokes). it does not have a primary key.
