@@ -1,0 +1,44 @@
+query languages->tools to obtain data from a database->add,modify,delete
+
+there are 3 types of querying languages:
+1)relational algebra
+2)tuple relational calculus
+3)SQL
+
+procedural vs declarative languages:-
+1)procedural
+->we should give clear instructions on how to generate output for the given output.
+2)declarative 
+->we just ask what we want and not how to obtain 
+
+Relational algebra:-
+
+basic relational operators:
+
+1)projection(π)
+->if a table named "costumer" containing attributes cid,cname,czip
+->Πcid,cname(customer)=another table containing only cid and cname as a attributes.
+->it takes one relation so it is urinary oparator.
+->projection with one attributes having duplicates can't exist.
+
+2)selection(σ)
+->σcname=n1(customer)=table containing tuples which are having the cname=n1
+
+3)rename(ρ)
+->ρcname|csutname(customer)=it just rename the attribute heading from cname to custname
+
+set oparators:
+
+1)union
+->it combines both the relations and writes the common tuples only one time.
+
+2)intersection
+->it gives the table containing common tuples
+
+3)difference
+->R1-R2=R1-(R1^R2)
+->gives the table contating R1 tuples without the tuples which are common in both R1 and R2. 
+
+Compatibility of relations:
+R1(c1,c2,c3) , R2(c1,c2) ->not compatiable
+R1(c1,c2,c3) , R2(c1,c2,c4) ->not compatiable
