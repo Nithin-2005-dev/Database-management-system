@@ -1,0 +1,14 @@
+->table is nothing but the mathematical relation.
+->domain=set of all values an attribute can take
+
+Relation(in math):-
+A={a1,a2,a3,...}
+B={b1,b2,b3,...}
+AxB={(a,b)|a∈A,b∈B}
+->a relation is a subset of AxB
+->no two tuples/rows in a table/relation are the same
+
+function:-
+->it's a special relation with
+1)every element in domain should have a image
+2)one element should not have a multiple images
