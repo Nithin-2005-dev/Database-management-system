@@ -1,0 +1,32 @@
+Natural Join(derived operators):
+->its is a binary operator
+->R(c1,c2,c3) S(c2,c3,c4) are two tables
+->R⋈S is the natural join
+->it gives the table containing the usion of atttibutes of both the tables i.e T(c1,c2,c3,c4)
+->but the tuples should match otherwise ignore them.
+->R⋈S=πc1,c2,c3,c4(σR.c2=S.c2 & R.c3=S.c3(RxS))
+
+Conditional Join(θ-joins):
+->it is just a cross product with condition.
+->R⋈cS=σR.c1<S.c4(RxS)
+->we can use <= >= < > != =
+
+Left-outer join:
+->R⟕S=R⋈S U all tuples from the left relation that failed the join condition with null values appended
+->R⟕S=R⋈S U (R- πr1,r2,..,rn(R⋈S))x(Null,Null,..)
+
+Right-outer join:
+->R⟖S=R⋈S U all tuples from the right relation that failed the join condition with null values appended
+->R⟖S=R⋈S U (Null,Null,..)x(S- πs1,s2,..,sn(R⋈S))
+
+Full-outer join:
+->R⟗S=R⋈S U all tuples from the both relations that failed the join condition with null values appended
+->R⟗S=R⋈S U (Null,Null,..)x(S- πs1,s2,..,sn(R⋈S)) U (R- πr1,r2,..,rn(R⋈S))x(Null,Null,..)
+
+division:
+->if the table containing cid,cat
+->then the division operator gives the cid who brought all the categories.
+->if R/S=T then R⊆TxS
+->R/S=πA(R)-πA((πA(R)xS)-R)
+
+completeness:you can represent any relational operators using complete set of operators.
